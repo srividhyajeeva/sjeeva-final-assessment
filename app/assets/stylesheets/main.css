@@ -195,19 +195,16 @@ a.tomato-announcement_Nav {
 	width: 100%;
 	height: 800px;
 	overflow-y: scroll;
-	
 }
-.announcement-container{
+.announcement-container {
 	border-radius: 10px;
 	padding: 10px;
 	background-color: rgba(189, 189, 189, 0.16);
-
 }
 .announcement-container-item {
 	padding: 10px 10px 1px 10px;
 }
-.announcement-container-titleIcon
-{
+.announcement-container-titleIcon {
 	background-color: blue;
 	border-radius: 50px;
 	width: 30px;
@@ -227,13 +224,11 @@ a.tomato-announcement_Nav {
 .announcement-container-detail {
 	margin-top: 5px;
 }
-.announcement-container-detail-CreatedBy
-{
+.announcement-container-detail-CreatedBy {
 	color: blue;
 	margin-right:5px;
 }
-.announcement-container-detail-CreatedDate
-{
+.announcement-container-detail-CreatedDate {
 	margin-left: 10px;
 	color:blue;
 	margin-right: 5px;
@@ -241,13 +236,11 @@ a.tomato-announcement_Nav {
 .announcement-container-detail-text {
 	font-weight: bold;
 }
-
-.announcement-filter
-{
+.announcement-filter {
 	float: right;
 	margin-top: -30px;
 }
-.announcement-filter select{
+.announcement-filter select {
 	border:none;
 	background-color: rgba(189, 189, 189, 0.16);
 	height:30px;

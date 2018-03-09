@@ -26,10 +26,10 @@
             });
             return dfd.promise;
 		}
-
 	}
 })();
 
+//get sp list items from ricks and issues
 function getRisksandIssues() {
 	var queryParams = {
 		Select: 'ID, Title, Function/Title, Description, Item_x0020_Owner/Title',
@@ -52,6 +52,7 @@ function getRisksandIssues() {
 	}
 */
 
+//get sp list items from work plans list
 function getWorkPlans() {
 	var queryParams = {
 		select: 'ID, Task_x0020_Owner/Title, Function/Title, Work_x0020_Plan_x0020_Task_x0020_Type/Title, Work_x0020_Plan_x0020_Task_x0020_Status/Title',

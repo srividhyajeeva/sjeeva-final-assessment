@@ -32,7 +32,7 @@
             });
         }
 
-        //Snippet without lodash
+        //tried without lodash
         function sumOrdersByCountry(data)
         {
             var countries = data[0].countries;
@@ -51,7 +51,7 @@
             return ordersByCountry;
         }
 
-        //snippet with lodash
+        //tried with lodash
         function OrdersByContry(data) 
         {
             var countries = data[0].countries;

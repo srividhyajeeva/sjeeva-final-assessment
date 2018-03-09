@@ -44,7 +44,7 @@
                 return response.data;
             });
         }
-        // Retrieve All Announcement Owners
+        //fetch all Owners
         function getAnnouncementOwners() {
             return $http({
                 method: 'GET',
@@ -53,7 +53,7 @@
                 return response.data;
             });
         }
-         // Retrieve All Announcements 
+         //fetch all announcements 
          function getAnnouncements() {
             return $http({
                 method: 'GET',
