@@ -17,9 +17,8 @@
  
         return directive;
     }
- 
     TomatoNavigationController.$inject = [];
- 
+
     function TomatoNavigationController() {
         var vm = this;
         vm.title = "Big Tomato Sauce Co.";

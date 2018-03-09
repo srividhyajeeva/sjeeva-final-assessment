@@ -1,1 +1,27 @@
-<!-- Add your code here, create additional directives if needed. -->
+<div class="announcement-filter">
+    <select ng-model = "selectedAnnouncementType">
+        <option value="">Select All</option>
+        <option ng-repeat="type in vm.types" value="{{type}}">{{type}}</option>
+    </select>
+</div>
+<div class="announcefeed-container">
+    <div ng-repeat="announcement in vm.announcements | orderBy: 'Date.orderDate':'reverse' | filter: selectedAnnouncementType">
+        <div class="announcement-container-item">
+            <div class="announcement-container">
+                <div class="announcement-container-title">
+                    <i class="announcement-container-titleIcon {{announcement.Type.Icon}}"></i>
+                    {{::announcement.Title}}
+                </div>
+                <div class="announcement-container-body">
+                    {{::announcement.Description}}
+                </div>
+                <div class="announcement-container-detail">
+                    <span class="announcement-container-detail-CreatedBy"><i class="fa fa-user"></i></span> 
+                    <span class="announcement-container-detail-text">{{::announcement.Owner.Title}}</span>
+                    <span class="announcement-container-detail-CreatedDate"><i class="fa fa-calendar"></i></span> 
+                    <span class="announcement-container-detail-text">{{::announcement.Date.displayDate}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

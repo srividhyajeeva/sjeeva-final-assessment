@@ -81,10 +81,19 @@ h1 {
 .tomato-navigation {
 	background-image: url("../images/yellow-pattern.png");
 }
-
 .tomato-navigation__title {
 	font-weight: bold;
 }
+.tomato-announcement_Nav { 
+	margin-left: 2px; 
+	text-decoration: none;
+}
+a.tomato-announcement_Nav { 
+	text-decoration: none;
+	color: #777;
+	font-weight: bold;
+}
+.announce-icon{color:red;}
 
 /*************************************** 
  * Tomato Card 
@@ -99,8 +108,9 @@ h1 {
 
 .tomato-card__header {
 	margin-bottom: 20px;
-	background: #ccc;
+	background: rgba(173, 231, 75, 0.93);
 	padding: 12px;
+	text-align: center;
 }
 
 .tomato-card__body {
@@ -177,9 +187,69 @@ h1 {
 	}
 }
 
-
 /*************************************** 
- * Tomato Announcements Feed
+ ***** Tomato Announcements Feed ******
  **************************************/
 
- /* Add Code Here */
+ .announcefeed-container {
+	width: 100%;
+	height: 800px;
+	overflow-y: scroll;
+	
+}
+.announcement-container{
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgba(189, 189, 189, 0.16);
+
+}
+.announcement-container-item {
+	padding: 10px 10px 1px 10px;
+}
+.announcement-container-titleIcon
+{
+	background-color: blue;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	color: white;
+	line-height: 1.5em;
+}
+.announcement-container-title {
+	font-size: 1.2em;
+	margin-bottom: .2rem;
+	font-weight: bold;
+}
+.announcement-container-body {
+	padding-top: 10px;
+}
+.announcement-container-detail {
+	margin-top: 5px;
+}
+.announcement-container-detail-CreatedBy
+{
+	color: blue;
+	margin-right:5px;
+}
+.announcement-container-detail-CreatedDate
+{
+	margin-left: 10px;
+	color:blue;
+	margin-right: 5px;
+}
+.announcement-container-detail-text {
+	font-weight: bold;
+}
+
+.announcement-filter
+{
+	float: right;
+	margin-top: -30px;
+}
+.announcement-filter select{
+	border:none;
+	background-color: rgba(189, 189, 189, 0.16);
+	height:30px;
+    margin-bottom: 10px;
+}

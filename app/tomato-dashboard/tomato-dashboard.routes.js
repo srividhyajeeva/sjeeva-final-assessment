@@ -5,6 +5,11 @@ angular.module('app').config(['$routeProvider', function($routeProvider) {
             controller: 'TomatoDashboardController',
             controllerAs: 'vm'
         })
+        .when('/announcements', {
+            templateUrl: './app/tomato-announcements/tomato-announcements-home.html',
+            controller: "TomatoAnnouncementsController",
+            controllerAs: 'vm'
+        })
         .when('/part-three', {
             templateUrl: './app/tomato-exercise-three/tomato-exercise-three.html',
             controller: "TomatoExerciseThreeController",

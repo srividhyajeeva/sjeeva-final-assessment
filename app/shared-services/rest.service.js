@@ -11,7 +11,9 @@
         var service = {
             getTomatoes: getTomatoes,
             getFarms: getFarms,
-            getExerciseThreeData: getExerciseThreeData
+            getExerciseThreeData: getExerciseThreeData,
+            getAnnouncements: getAnnouncements,
+            getAnnouncementOwners: getAnnouncementOwners
         };
 
         return service;
@@ -42,8 +44,23 @@
                 return response.data;
             });
         }
-
-        //Add your code here.
-
+        // Retrieve All Announcement Owners
+        function getAnnouncementOwners() {
+            return $http({
+                method: 'GET',
+                url: 'http://localhost:3000/owners'
+            }).then(function(response) {
+                return response.data;
+            });
+        }
+         // Retrieve All Announcements 
+         function getAnnouncements() {
+            return $http({
+                method: 'GET',
+                url: 'http://localhost:3000/announcements'
+            }).then(function(response) {
+                return response.data;
+            });
+        }
     }
 })();
